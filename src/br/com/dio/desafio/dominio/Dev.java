@@ -15,6 +15,11 @@ public class Dev {
         bootcamp.getDevsInscritos().add(this);
     }
 
+    public void desinscreverBootcamp(Bootcamp bootcamp){
+        bootcamp.removerDev(this);
+        this.conteudosInscritos.removeAll(bootcamp.getConteudos());
+    }
+
     public void progredir(){
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
         if (conteudo.isPresent()) {

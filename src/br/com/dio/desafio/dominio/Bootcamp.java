@@ -14,6 +14,10 @@ public class Bootcamp {
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
+    public void removerDev(Dev dev){
+        this.devsInscritos.removeIf( d -> d.equals(dev));
+    }
+
     public String getNome() {
         return nome;
     }

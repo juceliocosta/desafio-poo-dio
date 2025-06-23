@@ -37,8 +37,10 @@ public class Main {
         System.out.println("-");
         devCamila.progredir();
         devCamila.progredir();
+        devCamila.progredir();
+        devCamila.progredir();//executando o metodo mesmo sem conteúdo
         System.out.println("Conteúdos Inscritos Camila: "+ devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Inscritos Camila: "+ devCamila.getConteudosConcluidos());
+        System.out.println("Conteúdos Concluídos Camila: "+ devCamila.getConteudosConcluidos());
         System.out.println("XP: "+ devCamila.calcularTotalXp());
 
         System.out.println("-----------");
@@ -50,11 +52,15 @@ public class Main {
         System.out.println("-");
         devJoao.progredir();
         devJoao.progredir();
-        devJoao.progredir();
-        devJoao.progredir();//executando o metodo mesmo sem conteúdo
         System.out.println("Conteúdos Inscritos João: "+ devJoao.getConteudosInscritos());
-        System.out.println("Conteúdos Inscritos João: "+ devJoao.getConteudosConcluidos());
+        System.out.println("Conteúdos Concluídos João: "+ devJoao.getConteudosConcluidos());
         System.out.println("XP: "+ devJoao.calcularTotalXp());
+
+        devJoao.desinscreverBootcamp(bootcamp);
+        System.out.println("-");
+        System.out.println("João cancelou a inscrição do Bootcamp: ");
+        System.out.println("Conteúdos Inscritos João: "+ devJoao.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos João: "+ devJoao.getConteudosConcluidos());
 
 
     }
